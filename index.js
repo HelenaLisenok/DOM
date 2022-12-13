@@ -379,3 +379,13 @@ function func38() {
 	this.textContent = this.textContent + '!';
 	this.removeEventListener('click', func38); // отвязываем обработчик
 }
+//261(1)
+let elems3 = document.querySelectorAll('li');
+
+for (let elem of elems3) {
+	elem.addEventListener('click', function func39() {
+		this.textContent = Number(this.textContent) + 1;
+		this.removeEventListener('click', func39); // отвязываем обработчик
+	});
+}
+
