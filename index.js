@@ -385,7 +385,16 @@ let elems3 = document.querySelectorAll('li');
 for (let elem of elems3) {
 	elem.addEventListener('click', function func39() {
 		this.textContent = Number(this.textContent) + 1;
-		this.removeEventListener('click', func39); // отвязываем обработчик
+	});
+}
+
+//261(2) не получилось отвязать 
+let elems4 = document.querySelectorAll('li');
+
+for (let elem of elems4) {
+	elem.addEventListener('click', function func40() {
+		this.textContent = Number(this.textContent) + 1;
+		this.removeEventListener('click', func40); // отвязываем обработчик
 	});
 }
 
