@@ -312,8 +312,8 @@ function func32() {
 		elem.textContent = 'text';
 	}
 }
-//256(3) //не работает
-let button29 = document.querySelector('#button28');
+//256(3) 
+let button29 = document.querySelector('#button29');
 let paragr6 = document.querySelector('#paragr6');
 
 button29.addEventListener('click', func33);
@@ -323,7 +323,7 @@ function func33() {
 	for (let elem of elems) {
 		sum = Number(elem.value) + sum;
 	}
-	paragr6.value = sum;
+	paragr6.textContent = sum;
 }
 //257(1)
 let elems = document.querySelectorAll('.inp1');
