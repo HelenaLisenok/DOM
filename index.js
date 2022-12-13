@@ -359,3 +359,12 @@ function func36() {
 	elem35.textContent = elem35.href + '(' + elem35.href + ')';
 	this.removeEventListener('click', func36);
 }
+
+//259(2) 
+let button31 = document.querySelector('#button31');
+button31.addEventListener('click', func37);
+function func37() {
+	button31.value = Number(button31.value) + 1;
+	if (button31.value == '10')
+	button31.removeEventListener('click', func37);
+}
