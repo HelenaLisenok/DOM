@@ -368,3 +368,14 @@ function func37() {
 	if (button31.value == '10')
 	button31.removeEventListener('click', func37);
 }
+//260(1)
+let elems2 = document.querySelectorAll('p');
+
+for (let elem of elems2) {
+	elem.addEventListener('click', func38);
+}
+
+function func38() {
+	this.textContent = this.textContent + '!';
+	this.removeEventListener('click', func38); // отвязываем обработчик
+}
