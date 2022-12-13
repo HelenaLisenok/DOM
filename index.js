@@ -312,7 +312,7 @@ function func32() {
 		elem.textContent = 'text';
 	}
 }
-//256(3)
+//256(3) //не работает
 let button29 = document.querySelector('#button28');
 let paragr6 = document.querySelector('#paragr6');
 
@@ -325,4 +325,11 @@ function func33() {
 	}
 	paragr6.value = sum;
 }
-
+//257(1)
+let elems = document.querySelectorAll('.inp1');
+for (let elem of elems) {
+	elem.addEventListener('blur', func34);
+}
+function func34() {
+	this.value = Number(this.value) + 1;
+}
