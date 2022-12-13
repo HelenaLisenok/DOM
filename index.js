@@ -397,4 +397,7 @@ for (let elem of elems4) {
 		this.removeEventListener('click', func40); // отвязываем обработчик
 	});
 }
-
+//262(1)
+let inp12 = document.querySelector('#inp12');
+let value = inp12.getAttribute('value');
+console.log(value);
