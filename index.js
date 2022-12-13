@@ -351,4 +351,11 @@ for (let div of divs) {
 		this.textContent++;
 	});
 }
-
+//259(1)
+let elem35 = document.querySelector('#elem35');
+let button30 = document.querySelector('#button30');
+button30.addEventListener('click', func36);
+function func36() {
+	elem35.textContent = elem35.href + '(' + elem35.href + ')';
+	this.removeEventListener('click', func36);
+}
