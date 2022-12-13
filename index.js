@@ -333,3 +333,22 @@ for (let elem of elems) {
 function func34() {
 	this.value = Number(this.value) + 1;
 }
+//257(2) 
+let elems1 = document.querySelectorAll('.paragr1');
+for (let elem of elems1) {
+	elem.addEventListener('click', func35);
+}
+function func35() {
+	this.textContent = Math.pow(Number(this.textContent),2);
+}
+
+//258
+let divs = document.querySelectorAll('div');
+
+for (let div of divs) {
+	div.addEventListener('click', function()
+	{
+		this.textContent++;
+	});
+}
+
